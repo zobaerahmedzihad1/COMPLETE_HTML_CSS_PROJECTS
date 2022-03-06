@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- thimify icon -->
+    <link rel="stylesheet" href="./css/themify-icons.css" />
     <!-- Bootstrap cdn -->
     <link
       rel="stylesheet"
@@ -18,39 +20,96 @@
     <title>E-SHOP</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
+    <div id="header">
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+            <img src="./images/logo.png" alt="logo" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span><i <i class="fa-solid fa-align-justify navbar-toggler-icon"</i> </i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#special">Special</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contract">Contract</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- top banner  -->
+  <section id="home">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class = "top-banner top-banner1">
+              <div class="top-banner-text">
+                  <h1> Women </h1>
+                  <h2>52% discount for this season.</h2>
+                  <a href="#" class="btn btn-danger mt-5 text-uppercase">Our Products</a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class = "top-banner top-banner2">
+            <div class="top-banner-text">
+                <h1> E-Shop </h1>
+                <h2>With working card & paypal.</h2>
+                <a href="#" class="btn btn-danger mt-5 text-uppercase">Our Products</a>
+            </div>
+        </div>
         </div>
       </div>
-    </nav>
+      <!-- <i class="fa-regular fa-angle-left"></i> -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <span class="ti-angle-left slider-icon" ></span>
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <span class="ti-angle-right slider-icon"></span>
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
+    <!-- font awesome key -->
+    <!-- <script
+      src="https://kit.fontawesome.com/16b127a5c0.js"
+      crossorigin="anonymous"
+    ></script> -->
     <!-- Bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
